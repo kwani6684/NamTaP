@@ -5,9 +5,31 @@ import { Button } from 'react-bootstrap';
 import Cards from './components/Cards';
 import React, { useState } from 'react';
 import data from './data';
-import sb from'./audio/sb.mp3'
+import sb from'./audio/00.mp3'
 import { Routes, Route, Link, useNavigate, Outlet } from 'react-router-dom'
 import About from './components/About';
+import $ from 'jquery';
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
+
+
+// import 'react-h5-audio-player/lib/styles.less' Use LESS
+// import 'react-h5-audio-player/src/styles.scss' Use SASS
+
+
+// $(document).ready(function(){
+//   $('audio').attr('controlsList', 'nodownload');
+// });
+const Player = () => (
+  <div className='bgmbox'>
+  <AudioPlayer
+    autoPlay
+    src={sb}
+    onPlay={e => console.log("onPlay")}
+    // other props here
+  />
+  </div>
+);
 
 function App() {
   let navigate = useNavigate();
@@ -16,8 +38,12 @@ function App() {
   return (
     <>
     <div className="bgm">
-         <h3>Summer Belle</h3>
-   <audio src={sb} type="audio/mp3" autoPlay={true} controls={true}></audio>
+         <h3>00</h3>
+   {/* <audio controls controlsList="nodownload"  >
+    <source src ={sb}></source>
+   </audio> */}
+   <Player />
+  
          </div>
     <Routes>
       <Route path='/album' element={<div>hi</div>}/>

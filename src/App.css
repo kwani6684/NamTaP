@@ -49,16 +49,22 @@ font-size: 62.5%;
 .bgm{
   top:0;
   height: 100px;
-  width: 100%;
-  color: bisque;
+  width: 30%;
+
   position: fixed;
   text-align: right;
   margin-bottom: 100px;
   z-index: 1;
+  margin-left: 70%;
+  opacity: 50%;
+  
   
 }
+.bgmbox{
+  height: 50%;
+}
 .main-background {
-  
+  margin-top: 30px;
   background-image: url(../public/img/mainbg.jpg);
   background-repeat: no-repeat;
   background-size: 100% 90%;
