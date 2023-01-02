@@ -1,17 +1,21 @@
 .App {
   text-align: center;
 }
+html{
+font-size: 62.5%;
+}
+
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'yangjin';
+  src: url(../public/font/양진체v0.9_ttf.ttf);
 }
+
+
 
 .App-header {
   background-color: #282c34;
@@ -27,7 +31,13 @@
 .App-link {
   color: #61dafb;
 }
-
+@keyframes shake {
+  0% { transform: rotate(0deg)}
+  25% { transform: rotate(-8deg)}
+  50% { transform: rotate(8deg)}
+  75% { transform: rotate(-8deg)}
+  100% { transform: rotate(0deg)}
+} 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +45,119 @@
   to {
     transform: rotate(360deg);
   }
+}
+.bgm{
+  top:0;
+  height: 100px;
+  width: 100%;
+  color: bisque;
+  position: fixed;
+  text-align: right;
+  margin-bottom: 100px;
+  z-index: 1;
+  
+}
+.main-background {
+  
+  background-image: url(../public/img/mainbg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+  height: 500px;
+  padding: 20px;
+ 
+
+}
+.main-container {
+  
+  max-width: 1200px;
+  margin: auto;
+ 
+} 
+.main-text {
+  float: left;
+  filter: grayscale(0%);
+  text-shadow: -5px 0 rgb(174, 168, 49), 0 1px , 1px 0 , 0 -5px rgb(174, 168, 49);
+  font-family: 'yangjin';
+  color:rgb(221, 77, 77);
+  font-size:10rem;
+  
+}
+.textani:hover{
+  animation-name: shake;
+  animation-duration: 1s;
+}
+.main-iphone {
+  width: 400px;
+  float: center;
+  height: 500px;
+  margin-top: 200px;
+  filter: opacity(80%);
+}
+.btn-black{
+
+  margin-top:30px;
+  background-color: antiquewhite;
+  
+  width: 100px;
+  height: 40px;
+  float: left;
+}
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  color: white;
+}
+.category-title{
+  font-size: 30px;
+  padding-bottom:100px;
+  font-family: 'yangjin';
+}
+.portfolio-container {
+  text-align: left;
+  max-width: 1200px;
+  margin: auto;
+}
+.about{
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'yangjin';
+  padding: 50px;
+}
+.beginning{
+  width: 80%;
+  margin-left: 10%;
+  font-size: 2rem;
+  font-family: 'yangjin';
+
+}
+.beginning-header{
+  font-size: 4rem;
+  padding-bottom: 4rem;
+}
+
+
+@media screen and (max-width : 992px) {
+  .main-iphone {
+    width: 260px;
+    display: block;
+    float: none;
+    margin: auto;
+    margin-top: 42px;
+  }
+  .main-text {
+    
+    float: none;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 5rem;
+    text-shadow: none;
+  }
+  .category-title{
+    font-size: 30px;
+    padding-bottom:0px;
+    font-family: 'yangjin';
+  }
+
+  
 }
