@@ -11,6 +11,7 @@ import About from './components/About';
 import $ from 'jquery';
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
+import SIlogo from './components/SIlogo';
 
 
 // import 'react-h5-audio-player/lib/styles.less' Use LESS
@@ -23,7 +24,7 @@ import 'react-h5-audio-player/lib/styles.css';
 const Player = () => (
   <div className='bgmbox'>
   <AudioPlayer
-    autoPlay
+    autoPlay 
     src={sb}
     onPlay={e => console.log("onPlay")}
     // other props here
@@ -37,7 +38,9 @@ function App() {
 
   return (
     <>
+   <SIlogo />
     <div className="bgm">
+    
          <h3>00</h3>
    {/* <audio controls controlsList="nodownload"  >
     <source src ={sb}></source>

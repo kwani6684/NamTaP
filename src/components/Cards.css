@@ -26,7 +26,31 @@
     border : 0px solid black;
     transition: border 0.5s;
   }
-  
+  .lightning{
+    position: absolute;
+    top:0;
+    width: 9%;
+    height: 13%;
+    float:left;
+    object-fit: cover;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 1.5s;
+
+  }
+  .silogo{
+    position: relative;
+    top:0;
+    width: 9%;
+    height: 9%;
+    float:left;
+    object-fit: cover;
+    
+  }
+  .lightning:hover{
+    opacity: 0.5;
+    
+  }
   .white-box:hover {
     border : 30px solid black;
   }
