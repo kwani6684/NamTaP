@@ -147,10 +147,17 @@ font-size: 62.5%;
 }
 
 
-@media screen and (max-width : 992px) {
+@media  (max-width : 992px) {
   .bgm{
-    width: 200px;
-    position:absolute
+    width: 300px;
+    position: absolute;
+    float:right;
+    margin-left: 40%;
+  }
+  .main-background{
+    
+
+
   }
   
   .main-iphone {
@@ -165,12 +172,13 @@ font-size: 62.5%;
   .main-text {
     
     float: none;
-    margin-top: 70px;
+    margin-top: 60px;
     text-align: left;
-    font-size: 7rem;
-    text-shadow: -5px 0 rgb(96, 136, 177), 0 1px , 1px 0 , 0 -5px rgb(96, 136, 177);
+    font-size: 6rem;
+    text-shadow: -3px 0 rgb(96, 136, 177), 0 1px , 1px 0 , 0 -3px rgb(96, 136, 177);
 
   }
+ 
   .category-title{
     font-size: 30px;
     padding-bottom:0px;
