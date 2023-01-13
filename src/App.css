@@ -48,21 +48,20 @@ font-size: 62.5%;
 }
 .bgm{
   top:0;
-  height: 100px;
+  height: 50px;
   width: 30%;
   float: right;
-
   position: fixed;
   text-align: right;
   margin-bottom: 100px;
   z-index: 1;
   margin-left: 70%;
   opacity: 50%;
-  
-  
+
 }
 .bgmbox{
-  height: 50%;
+  
+  height: 10%;
 }
 .main-color{
   padding-top:100px;
@@ -84,19 +83,17 @@ font-size: 62.5%;
   margin: auto;
  
 } 
+
 .main-text {
   float: left;
   filter: grayscale(0%);
-  text-shadow: -5px 0 rgb(174, 168, 49), 0 1px , 1px 0 , 0 -5px rgb(174, 168, 49);
+  text-shadow: -5px 0 rgb(96, 136, 177), 0 1px , 1px 0 , 0 -5px rgb(96, 136, 177);
   font-family: 'yangjin';
-  color:rgb(221, 77, 77);
+  color:rgb(218, 218, 218);
   font-size:10rem;
   
 }
-.textani:hover{
-  animation-name: shake;
-  animation-duration: 1s;
-}
+
 .main-iphone {
   width: 400px;
   float: center;
@@ -107,11 +104,13 @@ font-size: 62.5%;
 .btn-black{
 
   margin-top:30px;
-  background-color: antiquewhite;
-  
-  width: 100px;
-  height: 40px;
+  letter-spacing:2px;
+  background-color: rgb(96, 136, 177);
+  font-size: 10rem;
+  width: 120px;
+  height: 50px;
   float: left;
+  
 }
 .portfolio {
   padding-top: 60px;
@@ -149,6 +148,11 @@ font-size: 62.5%;
 
 
 @media screen and (max-width : 992px) {
+  .bgm{
+    width: 200px;
+    position:absolute
+  }
+  
   .main-iphone {
     width: 260px;
     display: block;
@@ -156,13 +160,16 @@ font-size: 62.5%;
     margin: auto;
     margin-top: 42px;
   }
+
+  
   .main-text {
     
     float: none;
-    margin-top: 50px;
-    text-align: center;
-    font-size: 5rem;
-    text-shadow: none;
+    margin-top: 70px;
+    text-align: left;
+    font-size: 7rem;
+    text-shadow: -5px 0 rgb(96, 136, 177), 0 1px , 1px 0 , 0 -5px rgb(96, 136, 177);
+
   }
   .category-title{
     font-size: 30px;

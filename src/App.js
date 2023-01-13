@@ -55,9 +55,10 @@ function App() {
          
          <div className="main-background">
     <div className="main-container">
+      
       <div className="main-text" >
         <p className="textani" onClick={()=>{navigate('/')}}>남산타워<br/>피뢰침</p>
-        <Button onClick={()=>{navigate('/detail')}} className="btn-black" variant="secondary">뭔지 궁금해?</Button>
+        <Button onClick={()=>{navigate('/detail')}} className="btn-black" variant="secondary" style={{fontSize:15}}>뭔지 궁금해?</Button>
       </div>
       {/* <img src="img/namsan.jpg" className="main-iphone"/> */}
     </div>
